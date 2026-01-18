@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contactez-moi</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="parcours.html">Parcours</a>
+        <a href="competence.html">Compétences</a>
+        <a href="experience.html">Expériences</a>
+        <a href="quizz.html">Quizz</a>
+        <a href="matiere.html">Projets</a>
+        <a href="passion.html">Passions</a>
+        <a id="menu_actuel">Contact</a>
+        <a href="temoignage.html">Témoignages</a>
+    </nav>
+
+    <main>
+        <article>
+            <h1>Formulaire de contact</h1>
+            <form id="contactForm" name="contactForm" onsubmit="return verif()">
+                
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom"><br>
+                
+                <label for="email">Email :</label><br>
+                <input type="text" id="email" name="email" placeholder="Votre email"><br>
+                
+                <label for="objet">Objet :</label><br>
+                <input type="text" id="objet" name="objet" placeholder="Sujet de votre message"><br>
+                
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Écrivez votre message ici..."></textarea><br>
+                
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 - Mhiri Mariem</p>
+    </footer>
+    <script src="../javaScript/contact.js"></script>
+
+</body>
+</html>

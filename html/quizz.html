@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quizz Informatique</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="parcours.html">Parcours</a>
+        <a href="competence.html">Compétences</a>
+        <a href="experience.html">Expériences</a>
+        <a id="menu_actuel">Quizz</a>
+        <a href="matiere.html">Projets</a>
+        <a href="passion.html">Passions</a>
+        <a href="contact.html">Contact</a>
+        <a href="temoignage.html">Témoignages</a>
+    </nav>
+
+    <main>
+        <article>
+            <h1>Testez vos connaissances</h1>
+
+            <form id="quizzForm" name="quizzForm">
+
+                <p>1. HTML est un :</p>
+                <input type="radio" name="q1" value="a"> Langage de programmation<br>
+                <input type="radio" name="q1" value="b"> Langage de balisage<br>
+                <input type="radio" name="q1" value="c"> Système d’exploitation<br><br>
+
+                <p>2. CSS sert à :</p>
+                <input type="radio" name="q2" value="a"> Structurer une page<br>
+                <input type="radio" name="q2" value="b"> Mettre en forme une page<br>
+                <input type="radio" name="q2" value="c"> Gérer la base de données<br><br>
+
+                <p>3. JavaScript est utilisé pour :</p>
+                <input type="radio" name="q3" value="a"> Le design<br>
+                <input type="radio" name="q3" value="b"> L’interactivité<br>
+                <input type="radio" name="q3" value="c"> Le stockage des données<br><br>
+
+                <p>4. Quelle balise contient le contenu principal ?</p>
+                <input type="radio" name="q4" value="a"> &lt;header&gt;<br>
+                <input type="radio" name="q4" value="b"> &lt;main&gt;<br>
+                <input type="radio" name="q4" value="c"> &lt;footer&gt;<br><br>
+
+                <p>5. MySQL est :</p>
+                <input type="radio" name="q5" value="a"> Un langage<br>
+                <input type="radio" name="q5" value="b"> Un SGBD<br>
+                <input type="radio" name="q5" value="c"> Un navigateur<br><br>
+
+                <p>6. Scrum est une méthode :</p>
+                <input type="radio" name="q6" value="a"> Classique<br>
+                <input type="radio" name="q6" value="b"> Agile<br>
+                <input type="radio" name="q6" value="c"> Linéaire<br><br>
+
+                <p>7. Java est :</p>
+                <input type="radio" name="q7" value="a"> Un langage compilé<br>
+                <input type="radio" name="q7" value="b"> Un navigateur<br>
+                <input type="radio" name="q7" value="c"> Un framework CSS<br><br>
+
+                <p>8. Une API permet :</p>
+                <input type="radio" name="q8" value="a"> Le design graphique<br>
+                <input type="radio" name="q8" value="b"> La communication entre applications<br>
+                <input type="radio" name="q8" value="c"> La gestion des utilisateurs<br><br>
+
+                <p>9. GitHub est utilisé pour :</p>
+                <input type="radio" name="q9" value="a"> Le versionnement<br>
+                <input type="radio" name="q9" value="b"> Le montage vidéo<br>
+                <input type="radio" name="q9" value="c"> Le design web<br><br>
+
+                <p>10. Une base de données sert à :</p>
+                <input type="radio" name="q10" value="a"> Créer des images<br>
+                <input type="radio" name="q10" value="b"> Stocker les données<br>
+                <input type="radio" name="q10" value="c"> Styliser une page<br><br>
+
+                <input type="button" value="Valider" onclick="corrigerQuizz()">
+            </form>
+
+            <div id="resultat"></div>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 - Mhiri Mariem</p>
+    </footer>
+    <script src="../javaScript/quizz.js"></script>
+</body>
+</html>
