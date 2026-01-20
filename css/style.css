@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*La largeur totale inclut le padding et la bordure.*/
 }
 
 body{
@@ -24,15 +24,16 @@ header h1{
     font-size:38px;
     color:#916654;
     font-style: italic;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /*ajoute 1 pixel d’espace entre chaque lettre*/
 }
 
 nav{
     width:1000px;
-    margin:auto;
+    margin:auto;/*Centre la barre de navigation horizontalement*/
     background-color:#ffffff;
     text-align:center;
-    padding:15px 0;
+    padding:15px 0;/*Ajoute un espace intérieur vertical de 15px*/
+    /*Ajoute une fine ligne en haut et en bas du menu*/
     border-top:1px solid #e2deda;
     border-bottom:1px solid #e2deda;
 }
@@ -41,10 +42,13 @@ nav a{
     text-decoration:none;
     color:#916654;
     font-weight:bold;
-    padding:10px 18px;
-    margin:6px;
+    padding:10px 18px;/*espace entre le texte et le bord du bouton*/
+    margin:6px;/*espace entre chaque bouton*/
+    /*avec inline-block, tous les espacements et tailles fonctionnent correctement*/
     display:inline-block;
     border-radius:25px;
+    /*applique la transition à tous les changements(background color) pendant 0,3 seconde
+    et de type ease*/
     transition: all 0.3s ease;
 }
 
@@ -70,6 +74,7 @@ article{
     background-color:#ffffff;
     padding:35px;
     border-radius:25px;
+    /*décalage horizontal,décalage vertical,flou,couleur de l’ombre avec transparence*/
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
@@ -119,30 +124,34 @@ footer p{
 }
 
 .reseaux-sociaux {
-    clear: both;
+    clear: both;/*Assure que cette section commence après tous les éléments flottants pour eviter le chauvechements*/
     margin-top: 20px;
     text-align: center;
+    /*Permet de mettre les icônes sur une seule ligne*/
     display: flex;
+    /*Centre horizontalement les icônes dans le conteneur.*/
     justify-content: center;
-    gap: 15px;
+    gap: 15px;/*un espace de 15px entre chaque icône*/
 }
 
 /* icones*/
 .reseaux-sociaux img {
     width: 30px;
     height: 30px;
+    /*l’agrandissement se fait en douceur, pas brutal*/
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 .reseaux-sociaux img:hover {
+    /*lorsque la souris passe sur l’icône, elle grandit de 20%*/
     transform: scale(1.2);
 }
 /*diplome*/
 .diplomes {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: flex;/*Permet de placer les diplômes sur une ligne*/
+    gap: 20px;/*un espace de 20px entre chaque diplôme*/
+    flex-wrap: wrap;/*Si les diplômes ne tiennent pas sur une seule ligne,pass auto à la ligne suivante*/
     margin-top: 20px;
 }
 
@@ -232,14 +241,10 @@ ul li{
     font-weight: bold;   
 }
 #quizzForm input[type="radio"] {
-    margin-right: 8px;
+    margin-right: 8px;/*entre accent et le text*/
     accent-color: #916654;
 }
-#quizzForm label {
-    display: inline-block;
-    margin-bottom: 8px;
-    font-size: 15px;
-}
+
 #quizzForm input[type="button"] {
     padding: 12px 25px;
     border: none;
